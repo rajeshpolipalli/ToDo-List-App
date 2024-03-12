@@ -1,0 +1,122 @@
+html { 
+    height: 100%; 
+    min-height: 800px;
+}
+body {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.app {
+    margin: 50px;
+    border: 3px solid rgb(134, 131, 131);
+    padding: 30px;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(252, 218, 175);
+    font-family: 'Montserrat', sans-serif;
+}
+/* heading */
+.heading {
+    margin: 20px;
+    padding: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.heading__title {
+    font-family: 'Monoton', cursive;
+    align-content: center;
+    font-size: 4rem;
+}
+
+.heading__sub-title {
+    font-size: 1rem;
+}
+/* todo */
+.todo {
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: blanchedalmond;
+}
+/* todo scrollbar */
+.todo::-webkit-scrollbar {    width: 10px;}
+.todo::-webkit-scrollbar-track {background: blanchedalmond;}
+.todo::-webkit-scrollbar-thumb {background: rgb(233, 209, 173);}
+.todo::-webkit-scrollbar-thumb:hover {background: #555;}
+.todo__list {
+    list-style: none;
+    padding: 0;
+}
+.todo__item {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo__item:hover {
+    cursor: pointer;
+}
+.todo__icon-tick {
+    font-size: 2rem;
+    min-width: 50px;
+}
+.todo__text {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    flex-wrap: nowrap;
+}
+.todo__text.cross-out {
+    text-decoration: line-through;
+}
+.todo__text {
+    cursor: pointer;
+}
+.todo__icon-delete {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+.todo__icon-delete {
+    cursor: pointer;
+}
+/* new */
+.new {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+.new__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+.new__input {
+    vertical-align: middle;
+    margin: 0;
+    /* box-sizing: border-box; */
+    width: 95%;
+    background: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    outline-width: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.new__submit {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+.new__submit:hover {
+    cursor: pointer;
+}
